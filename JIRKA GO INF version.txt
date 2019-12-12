@@ -1,0 +1,33 @@
+@echo off
+
+:start
+title jméno
+color 02
+cls
+echo ................
+echo . zadejte jmeno.
+echo ................
+echo.
+
+set /p name=
+goto l1
+
+:l1
+title level 1
+color 02
+cls
+echo ...............
+echo . zvolte jazyk 
+echo .
+echo .  a)cesky
+echo .  b)anglicky
+echo .................
+echo.
+
+set /p o=
+if %o% == a goto cesky
+if %o% == b goto anglicky
+
+:cesky
+title jirka go cz
+color 02
